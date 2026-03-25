@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import QuestionList from "./QuestionList";
-import './src/component/Quiz.css'
+import './Quiz.css'
 function Quiz() {
   const Questions = [
     {
