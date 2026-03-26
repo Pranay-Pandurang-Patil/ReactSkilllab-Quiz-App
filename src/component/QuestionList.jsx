@@ -8,7 +8,7 @@ export default function QuestionList({
 }) {
   return (
     <div>
-      <h2>{question}</h2>
+   <h2>🧠 {question}</h2>
       <ul> {/* fixed u1 → ul */}
         {options.map((option, index) => (
           <li

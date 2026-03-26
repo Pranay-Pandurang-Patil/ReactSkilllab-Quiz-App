@@ -1,35 +1,94 @@
-.App {
-    text-align: center;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    margin: 10px 0;
-    padding: 10px;
-    cursor: pointer;
-    background-color: #f4f4f4;
-  }
-  
-  li:hover {
-    background-color: #ddd;
-  }
-  
-  .selected {
-    background-color: #b3e5fc;
-  }
-  
-  .button{
-    background-color: #0dbc72;
-    border-radius: 20px;
-    width: 20%;
-    cursor: pointer;
-  }
-  .button-disable{
-    border-radius: 20px;
-    width: 20%;
-    cursor: not-allowed;
-  }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+
+  /* FIXED GRADIENT */
+  background: linear-gradient(135deg, #0C67A0, #0dbc72);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  /* IMPORTANT */
+  min-height: 100vh;
+}
+html {
+  height: 100%;
+}
+/* Main container */
+.quiz-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Question */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Options */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 12px;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+li:hover {
+  background-color: #e3f2fd;
+  border: 1px solid #0C67A0;
+}
+
+.selected {
+  background-color: #b3e5fc;
+  border: 1px solid #0288d1;
+}
+
+/* Buttons */
+.button {
+  background-color: #0dbc72;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background-color: #0aa764;
+}
+
+.button-disable {
+  background-color: #ccc;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: none;
+  color: #666;
+  cursor: not-allowed;
+  margin-top: 20px;
+}
+
+/* Score screen */
+.score {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  height: 50px;
+  width: 550px;
+}
